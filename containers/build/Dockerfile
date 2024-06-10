@@ -2,7 +2,8 @@
 FROM node:14 
 
 RUN apt-get update -y && \
-    apt-get upgrade -y
+    apt-get upgrade -y \
+    libavahi-compat-libdnssd-dev
 
 RUN npm install yarn --network-concurrency 1 -y 
 
