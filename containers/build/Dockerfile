@@ -4,7 +4,7 @@ FROM node:14
 RUN apt-get update -y && \
     apt-get upgrade -y
 
-RUN npm install yarn -y
+RUN npm install yarn -y --network-concurrency 1
 
 RUN git clone https://github.com/Patuuuska/web-app
 
