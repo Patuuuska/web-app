@@ -1,5 +1,5 @@
 # Wybierz obraz bazowy z Node.js do uruchomienia aplikacji
-FROM web-app:1.0
+FROM web-app-build:1.0
 
 # Ekspozycja portu, na którym będzie działać aplikacja
 EXPOSE 3000
