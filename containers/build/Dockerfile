@@ -2,10 +2,11 @@
 FROM node:14 
 
 RUN apt-get update -y && \
-    apt-get upgrade -y \
-    libavahi-compat-libdnssd-dev
+    apt-get upgrade -y 
+    #libavahi-compat-libdnssd-dev
 
-RUN npm install yarn --network-concurrency 1 -y 
+RUN npm install yarn -y
+#--network-concurrency 1 -y 
 
 RUN git clone https://github.com/Patuuuska/web-app
 
