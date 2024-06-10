@@ -1,3 +1,3 @@
-FROM web-app-build:1.1
+FROM web-app-build:error
 
 RUN yarn test
